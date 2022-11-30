@@ -1,4 +1,4 @@
-// !!! 정답코드 아님. 추후 수정 !!!
+// ❗️ 정답코드 아님. 추후 수정 ❗️
 
 function solution(price, money, count) {
     let answer = -1;
