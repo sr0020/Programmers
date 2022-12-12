@@ -8,17 +8,13 @@ using namespace std;
 vector<int> solution(vector<int> answers) {
     vector<int> answer;
     
-    // cnt: 1, 2, 3번 수포자의 정답률을 구하기 위한 배열
-    vector<int> cnt(3);
-    
-    // cnt 구한 후, 최댓값을 넣을 변수
-    int max_value = 0;
-
     // score = 1, 2, 3번 수포자가 찍은 방식을 담은 배열
     int score_1[5] = {1, 2, 3, 4, 5};
     int score_2[8] = {2, 1, 2, 3, 2, 4, 2, 5};
     int score_3[10] = {3, 3, 1, 1, 2, 2, 4, 4, 5, 5};
 
+    vector<int> cnt(3);  // cnt: 1, 2, 3번 수포자의 정답률을 구하기 위한 배열
+    int max_value = 0;  // cnt 구한 후, 최댓값을 넣을 변수
     
     // 각 수포자별 정답률 구하기
     // score과 answer 배열을 대조 후 답 맞으면 cnt[i]++; 
